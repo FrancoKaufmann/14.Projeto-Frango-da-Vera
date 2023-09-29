@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <!-- FonteAwesome -->
+    <script src="https://kit.fontawesome.com/0443aa82c9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <!-- Menu Hambuguer -->
+    <nav class="navbar navbar-dark bgprimary" >
+        <div class="container">
+            <!-- logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./src/img/Logo_1.png" alt="" class="imgfixed">
+          </a>
+
+          <!-- Menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+            <span><i class="fa-solid fa-bars fa-2x"></i></span>
+          </button>
+
+          
+          <!-- Conteudo do menu -->
+          <div class="collapse navbar-collapse bg-light rounded-bottom" id="menuNavbar">
+            <ul class="navbar-nav me-auto mb-2 fs-4 fw-bolder align-items-center">
+              <li class="nav-item mt-3 line">
+                <a class="nav-link dark-text" onclick="peçaAgora()">Pedir agora</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link dark-text" href="cardapio.html">Cardápio</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link dark-text" href="#endereco">Localização</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link dark-text" href="#horario">Horários</a>
+              </li>
+              <li class="nav-item line">
+                <a class="nav-link dark-text" href="#">Contatos</a>
+              </li>
+              <li class="nav-item mb-3 line">
+                <a class="nav-link dark-text" href="#">Sobre nós</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+  <!-- fundo laranja com borda arredondada -->
+  <div class="fundo"></div>
+
+  <!-- card com img de fundo -->
+  <main class="mt-5">
+    <!-- Card com img no fundo -->
+    <div class="container">
+        <div class="card text-bg-light cardimg">
+          <!-- img de fundo -->
+            <img src="./src/img/cozy-winter-scenes-with-family.jpg" alt="" class="card-img img-fluid img-card">
+
+            <!-- conteudo -->
+            <div class="card-img-overlay">
+            <h4 class="card-title fs-1 text-white text-center  paytone mt-4">O melhor Frango Assado </br> de Campo Grande</h4>
+            <h6 class="card-subtitle fs-5 text-center text-white mt-4 fw-normal">Suculento | Feito com amor | Bom atendimento</h6>
+            <div class="d-flex justify-content-center mt-5">
+                <button class="btn btn-dark text-white fw-bold fs-4 px-5" onclick="enviarMensagemWhatsApp()"><i class="fa-solid fa-cart-shopping p-2"></i>Peça Agora</button>
+            </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <!-- card mais pedidos -->
+  <section class="mt-6">
+    <!-- Cardapio mais pedidos -->
+    <div class="container">
+      <!-- container preto -->
+      <div class="card bg-dark text-center w-75 pb-5">
+        <div class="card-body">
+          <h5 class="card-title text-white fs-2">Nossos Combos</h5>
+          <h6 class="card-subtitle mb-2 text-muted fs-5">Os mais pedidos</h6>
+          
+          <!-- Listas -->
+          <div class="card mb-5 size" style="max-width: 720px;" onclick="maisPedidos03()">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="./src/img/SSP_2480-Frango-assado-com-salsa-e-cebolinha-1.jpg" class="img-fluid imgradius">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-start fs-4 line fw-bold" id="pedidoNome03">Família Reunida</h5>
+                  <p class="text-start fs-6">Frango Assado, Batata Corada e linguiça</p>
+                  <p class="card-text text-start fs-6 fw-normal">Saboreie nosso Frango Assado na franqueira, sempre suculento e irresistível, acompanhado de uma farofa de dar água na boca, batatas que absorvem todo o delicioso aroma e sabor do frango e uma linguiça suculenta</p>
+                  <p class="card-text text-end mt-4 fs-5">R$ 40,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-5 size" style="max-width: 720px;" onclick="maisPedidos02()">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="./src/img/SSP_2480-Frango-assado-com-salsa-e-cebolinha-1.jpg" class="img-fluid imgradius">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-start fs-4 line fw-bold" id="pedidoNome02">Sabor Completo</h5>
+                  <p class="text-start fs-6">Frango Assado, farofa temperada e Batata Corada</p>
+                  <p class="card-text text-start fs-6 fw-normal">Saboreie nosso Frango Assado na franqueira, sempre suculento e irresistível, acompanhado de uma farofa de dar água na boca, batatas que absorvem todo o delicioso aroma e sabor do frango.</p>
+                  <p class="card-text text-end mt-4 fs-5">R$ 35,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-5 size" style="max-width: 720px;" onclick="maisPedidos01()">
+            <div class="row g-0">
+              <div class="col-md-3">
+                <img src="./src/img/SSP_2480-Frango-assado-com-salsa-e-cebolinha-1.jpg" class="img-fluid imgradius">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-start fs-4 line fw-bold" id="pedidoNome01">Tradição Brasileira</h5>
+                  <p class="text-start fs-6">Frango Assado e farofa temperada</p>
+                  <p class="card-text text-start fs-6 fw-normal">Saboreie nosso Frango Assado na franqueira, sempre suculento e irresistível, acompanhado de uma farofa de dar água na boca, impecavelmente temperada com nossos temperos da casa.</p>
+                  <p class="card-text text-end mt-4 fs-5 fw-normal">R$ 31,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+          <div class="d-grid gap-2 d-md-block">
+            <a href="cardapio.html" class="btn btn-light w-40 fw-bold fs-4 ml-p"><i class="fa-solid fa-book-open p-2 text-dark"></i>Ver mais</a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- localização -->
+  <section class="mt-6">
+    <div class="container" id="endereco">
+      <h1 class="text-center fs-1 fw-bold"><i class="fa-solid fa-map text-orange "></i> Localização</h1>
+      <p class="text-center fs-5 fw-semibold text-orange "> Retire no local</p>
+      <div class="text-center">
+        <iframe class="rounded w-100"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5538815707628!2d-43.56933302491227!3d-22.892932679264895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be34b445502e9%3A0xef524e615d02beea!2sFrango%20da%20Vera!5e0!3m2!1spt-BR!2sbr!4v1695677129338!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Horarios -->
+  <section class="mt-5">
+    <div class="container " id="horario">
+      <div class="card bgprimary" style="max-width: 720px;">
+
+        <div class="card-body">
+          <h5 class="card-title text-center text-white fs-1"><i class="fa-solid fa-clock p-2"></i>Horarios</h5>
+          <p class="card-text text-white fs-4 text-center fw-semibold">Sabado a domingo das 9:00 ás 15:00</p>
+
+          <h5 class="card-title text-center text-white fs-1 mt-5"><i class="fa-solid fa-phone p-2"></i>Contatos</h5>
+          <p class="card-text fs-4 text-center text-white fs-4 text-center fw-semibold">(21) 96654-0619</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-6">
+    <div class="container">
+      <h1 class="text-center fw-bold mb-4">Nós avalie no Google</h1>
+      <p class="text-center fw-semibold fs-4 text-orange">Cada feedback é valioso para nós, pois nos </br>auxilia a evoluir constantemente.</p>
+      <p class="text-center"><a href="https://g.page/r/Ceq-Al1hTlLvEAI/review" class="btn btn-dark fs-2 ps-4 pe-5 fw-semibold"><i class="fa-solid fa-star text-yellow p-2"></i>Avaliar</a></p>
+    </div>
+  </section>
+
+
+  <footer class="mt-6">
+    <div class="bgprimary">
+      <div class="container bgprimary">
+        <div>
+          <h1 class="text-center fw-bold fs-1 text-white pt-5">Nos siga nas redes socias</h1>
+          <div class="d-flex justify-content-center mt-5">
+            <p class="pe-5"><a href="" class="btn btn-dark"><i class="fa-brands fa-instagram fa-6x "></i></a></p>
+            <p><a href="" class="btn btn-dark"><i class="fa-brands fa-square-facebook fa-6x"></i></a></p>
+          </div>
+        </div>
+        <div class="text-white text-center p-5">
+          Copyright (c) @2023 – CNPJ: 52.214.402/0001-92
+          Todos os direitos reservados </br> | Imagens meramente ilustrativas.
+          <a href="">Desenvolvido por Franco Kaufmann</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Javascript -->
+  <script src="./src/js/script.js"></script>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
