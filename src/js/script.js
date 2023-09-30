@@ -46,7 +46,6 @@ function maisPedidos03() {
 }
 
 function peçaAgora() {
-    var numeroTelefone = "5521973739881";
     var mensagem = "Olá, gostaria de pedir um Frango Assado! poderia me enviar o cardápio?";
     
     // Formate o número de telefone removendo caracteres especiais e espaços.

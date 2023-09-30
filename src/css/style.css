@@ -31,7 +31,7 @@ main {
     width: 100%;
     height: 1100px;
     z-index: 0;
-    border-radius: 0px 0px 60px 60px;
+    border-radius: 0px 0px 80px 80px;
 }
 
 /* ------Fontes------ */
@@ -198,7 +198,11 @@ main {
 
 @media (max-width: 991.98px) { 
     .imgradius {
-        min-height: 272px
+        min-height: 340px
+    }
+
+    .w-75 {
+        width: 100%!important;
     }
 }
 
@@ -213,18 +217,38 @@ main {
 
     .imgradius {
         border-top-left-radius: 1.2rem;
-        border-top-right-radius: 1.2rem;
-        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 0rem;
     }
 
     .w-40 {
         width: auto;
     }
 
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: 40%;
+    }
+
+    .row {
+        flex-wrap: nowrap;
+        width: 70%;
+    }
+
 
 }
 
 @media (max-width: 575.98px) {
+    .col-md-3 {
+        margin-left: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgradius {
+        border-radius: 1.2rem;
+        min-height: 180px;
+    }
 
     .fundo {
         border-radius: 0px 0px 90px 90px;
@@ -235,10 +259,6 @@ main {
         height: 500px;
         border: none;
     }
-    
-    .w-75 {
-        width: 100%!important;
-    }
 
  }
 
@@ -246,5 +266,10 @@ main {
     .ml-p {
         margin-right: 0px;
         margin-bottom: 10px;
+    }
+
+    .imgradius {
+        border-radius: 1.2rem;
+        min-height: 130px;
     }
  }
